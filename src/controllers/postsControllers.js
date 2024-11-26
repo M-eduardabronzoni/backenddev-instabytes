@@ -1,7 +1,7 @@
 //responsável por receber as requisições e responder - responsável por uniar as rotas com os dados
 import {getTodosPosts, criarPost, alterarPost} from "../model/postsModel.js";
 import fs from "fs";
-import gerarDescricaoComGemini from "../../services/geminiService.js";
+import gerarDescricaoComGemini from "../services/geminiService.js";
 
  export async function listarPosts (req, res) {
     const posts = await getTodosPosts() //resultado da função
